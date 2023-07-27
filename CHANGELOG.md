@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/lemiliomoreno/cdk-example/compare/v1.0.0...v1.0.1) (2023-07-27)
+
+
+### Bug Fixes
+
+* correct healthcheck message ([e49b85d](https://github.com/lemiliomoreno/cdk-example/commit/e49b85dfeb4fd52a8ce92f70f5d6d01a09f0a715))
+
 # 1.0.0 (2023-07-27)
 
 
