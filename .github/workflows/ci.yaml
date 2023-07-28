@@ -25,5 +25,6 @@ jobs:
           pip install flake8
 
       - name: Build Docker Image
+        working-directory: app
         run: |
           docker build -t latest .
