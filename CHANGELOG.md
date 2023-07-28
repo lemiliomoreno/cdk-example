@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/lemiliomoreno/cdk-example/compare/v1.0.1...v1.0.2) (2023-07-28)
+
+
+### Bug Fixes
+
+* pass mongodb uri as a context ([f3b42fb](https://github.com/lemiliomoreno/cdk-example/commit/f3b42fbad9ce1d1e16b78075972b021de01598e9))
+
 ## [1.0.1](https://github.com/lemiliomoreno/cdk-example/compare/v1.0.0...v1.0.1) (2023-07-27)
 
 
