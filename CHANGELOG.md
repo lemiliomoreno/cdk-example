@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/lemiliomoreno/cdk-example/compare/v1.0.3...v1.0.4) (2023-07-28)
+
+
+### Bug Fixes
+
+* change context variable in cdk ([#1](https://github.com/lemiliomoreno/cdk-example/issues/1)) ([d9e5879](https://github.com/lemiliomoreno/cdk-example/commit/d9e5879a2aa762d673c53d020c69551cb62ad5a4))
+
 ## [1.0.3](https://github.com/lemiliomoreno/cdk-example/compare/v1.0.2...v1.0.3) (2023-07-28)
 
 
