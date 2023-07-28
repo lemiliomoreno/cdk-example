@@ -21,10 +21,7 @@ router = APIRouter(
 async def list_inventory(database: Annotated[AsyncIOMotorDatabase, Depends(get_db)]):
     inventory_list = [inventory async for inventory in database.inventory.find({})]
 
-    return JSONResponse(
-        content=jsonable_encoder(inventory_list),
-        status_code=200
-    )
+    return JSONResponse(content=jsonable_encoder(inventory_list), status_code=200)
 
 
 @router.post("", dependencies=[Depends(validate_token)])
@@ -42,8 +39,7 @@ async def create_inventory(
     )
 
     return JSONResponse(
-        content={"created_inventory": inserted_id.inserted_id},
-        status_code=201
+        content={"created_inventory": inserted_id.inserted_id}, status_code=201
     )
 
 
@@ -61,7 +57,4 @@ async def get_inventory(
     if not inventory:
         raise NotFoundRecord(f"Inventory with id {inventory_id} does not exists")
 
-    return JSONResponse(
-        content=inventory,
-        status_code=200
-    )
+    return JSONResponse(content=inventory, status_code=200)

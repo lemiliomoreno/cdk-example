@@ -21,9 +21,7 @@ async def create_users(
     create_user: CreateUser,
     database: Annotated[AsyncIOMotorDatabase, Depends(get_db)],
 ):
-    user_exists = await database.users.find_one({
-        "email": create_user.email
-    })
+    user_exists = await database.users.find_one({"email": create_user.email})
 
     if user_exists:
         raise DuplicateRecord(f"User {create_user.email} already exists")
@@ -54,4 +52,3 @@ async def get_user(
         raise NotFoundRecord(f"User with id {user_id} does not exists")
 
     return user
-
