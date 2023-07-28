@@ -7,6 +7,6 @@ from application_stack.application_stack import ApplicationStack
 
 
 app = cdk.App()
-ApplicationStack(app, "ApplicationStack1")
+ApplicationStack(app, "ApplicationStack")
 
 app.synth()

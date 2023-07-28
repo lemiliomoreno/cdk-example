@@ -17,6 +17,7 @@ class ApplicationStack(Stack):
         super().__init__(scope, construct_id, **kwargs)
 
         docker_tag = self.node.try_get_context("docker_tag")
+        mongodb_uri = self.node.try_get_context("docker_tag")
 
         vpc = ec2.Vpc(
             self,
@@ -58,9 +59,12 @@ class ApplicationStack(Stack):
             task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
                 image=ecr_image,
                 task_role=ecs_task_role,
+                environment={
+                    "MONGODB_URI": mongodb_uri
+                }
             ),
         )
 
         fargate_cluster.target_group.configure_health_check(
-            path="/docs"
+            path="/healthcheck"
         )
