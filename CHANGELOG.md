@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/lemiliomoreno/cdk-example/compare/v1.0.2...v1.0.3) (2023-07-28)
+
+
+### Bug Fixes
+
+* use single quotes ([20b4d95](https://github.com/lemiliomoreno/cdk-example/commit/20b4d95ad7e8faea0cb0912b7c6cbfe27eae1489))
+
 ## [1.0.2](https://github.com/lemiliomoreno/cdk-example/compare/v1.0.1...v1.0.2) (2023-07-28)
 
 
